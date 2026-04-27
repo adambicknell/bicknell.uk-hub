@@ -12,6 +12,7 @@ import {
   UserIcon,
   XIcon,
   YouTubeIcon,
+  FacebookIcon,
 } from "./components/Icons.jsx";
 
 const currentYear = new Date().getFullYear();
@@ -54,8 +55,13 @@ const socials = [
   },
   {
     name: "GitLab",
-    href: "https://gitlab.com/adambicknell",
+    href: "https://gitlab.com/adamb-linelab",
     icon: GitLabIcon,
+  },
+  {
+    name: "LinkedIn",
+    href: "https://www.facebook.com/dambicknell",
+    icon: FacebookIcon,
   },
   {
     name: "LinkedIn",
