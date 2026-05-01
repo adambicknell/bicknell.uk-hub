@@ -4,6 +4,7 @@ import HubCard from "./components/HubCard";
 import Footer from "./components/Footer";
 import { cards, socials } from "./data/hubData";
 import { useEqualCardDescriptionHeights } from "./hooks/useEqualCardDescriptionHeights";
+import TechStackSection from "./components/TechStackSection";
 
 function App() {
   const { descriptionHeight, setDescriptionRef } =
@@ -26,6 +27,7 @@ function App() {
             />
           ))}
         </section>
+        <TechStackSection />
       </main>
 
       <Footer socials={socials} />

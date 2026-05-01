@@ -382,6 +382,72 @@ a {
   color: #667085;
 }
 
+.site-footer p {
+  color: #2267b2;
+}
+
+.tech-stack {
+  width: min(100% - 2.5rem, 1080px);
+  margin: 0 auto 2.5rem;
+  padding: clamp(1.5rem, 4vw, 2.3rem);
+  text-align: center;
+}
+
+.tech-stack-label {
+  margin: 0;
+  font-weight: 800;
+  color: #101a29;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.tech-stack h2 {
+  margin: 0.55rem 0 0;
+  font-size: clamp(1.4rem, 2.2vw, 1.9rem);
+  color: #101a29;
+}
+
+.tech-stack-copy {
+  margin: 0.85rem auto 0;
+  max-width: 700px;
+  color: #334155;
+  line-height: 1.5;
+}
+
+.tech-stack-logos {
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 0.9rem;
+}
+
+.tech-logo-card {
+  padding: 0.9rem 0.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.tech-logo-mark {
+  width: 70px;
+  height: 70px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  color: #2267b2;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.tech-logo-name {
+  font-size: 0.96rem;
+  font-weight: 700;
+  color: #1f2a37;
+}
+
 @media (max-width: 940px) {
   .site-header {
     /* flex-direction: column;
