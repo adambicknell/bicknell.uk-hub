@@ -1,4 +1,4 @@
-import { MailIcon } from "./Icons.jsx";
+import { MailIcon } from "./Icons";
 
 export default function Header() {
   return (

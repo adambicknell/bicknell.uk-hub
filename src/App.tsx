@@ -1,9 +1,9 @@
-import Header from "./components/Header.jsx";
-import Hero from "./components/Hero.jsx";
-import HubCard from "./components/HubCard.jsx";
-import Footer from "./components/Footer.jsx";
-import { cards, socials } from "./data/hubData.jsx";
-import { useEqualCardDescriptionHeights } from "./hooks/useEqualCardDescriptionHeights.jsx";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import HubCard from "./components/HubCard";
+import Footer from "./components/Footer";
+import { cards, socials } from "./data/hubData";
+import { useEqualCardDescriptionHeights } from "./hooks/useEqualCardDescriptionHeights";
 
 function App() {
   const { descriptionHeight, setDescriptionRef } =

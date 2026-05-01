@@ -10,9 +10,10 @@ import {
   FacebookIcon,
   InstagramIcon,
   TikTokIcon,
-} from "../components/Icons.jsx";
+} from "../components/Icons";
+import type { HubCardItem, SocialLinkItem } from "../types";
 
-export const cards = [
+export const cards: HubCardItem[] = [
   {
     title: "Dev Portfolio",
     description:
@@ -42,7 +43,7 @@ export const cards = [
   },
 ];
 
-export const socials = [
+export const socials: SocialLinkItem[] = [
   { name: "GitHub", href: "https://github.com/adambicknell", icon: GitHubIcon },
   { name: "GitLab", href: "https://gitlab.com/adamb-linelab", icon: GitLabIcon },
   { name: "LinkedIn", href: "https://www.linkedin.com/in/adamrbicknell", icon: LinkedInIcon },

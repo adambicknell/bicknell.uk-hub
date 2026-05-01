@@ -1,18 +1,20 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 
-export function useEqualCardDescriptionHeights(items) {
-  const descriptionRefs = useRef([]);
+export function useEqualCardDescriptionHeights<T>(items: T[]) {
+  const descriptionRefs = useRef<Array<HTMLParagraphElement | null>>([]);
   const [descriptionHeight, setDescriptionHeight] = useState(0);
 
   const setDescriptionRef = useCallback(
-    (index) => (node) => {
+    (index: number) => (node: HTMLParagraphElement | null) => {
       descriptionRefs.current[index] = node;
     },
     [],
   );
 
   useEffect(() => {
-    const descriptions = descriptionRefs.current.filter(Boolean);
+    const descriptions = descriptionRefs.current.filter(
+      (description): description is HTMLParagraphElement => Boolean(description),
+    );
 
     if (!descriptions.length) return undefined;
 

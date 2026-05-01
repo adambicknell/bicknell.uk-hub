@@ -1,8 +1,13 @@
-import SocialLink from "./SocialLink.jsx";
+import SocialLink from "./SocialLink";
+import type { SocialLinkItem } from "../types";
 
 const currentYear = new Date().getFullYear();
 
-export default function Footer({ socials }) {
+interface FooterProps {
+  socials: SocialLinkItem[];
+}
+
+export default function Footer({ socials }: FooterProps) {
   return (
     <footer className="site-footer">
       <p>Connect with me</p>

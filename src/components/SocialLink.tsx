@@ -1,4 +1,10 @@
-export default function SocialLink({ social }) {
+import type { SocialLinkItem } from "../types";
+
+interface SocialLinkProps {
+  social: SocialLinkItem;
+}
+
+export default function SocialLink({ social }: SocialLinkProps) {
   const Icon = social.icon;
 
   return (

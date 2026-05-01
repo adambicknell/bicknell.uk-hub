@@ -1,6 +1,14 @@
-import { ArrowIcon } from "./Icons.jsx";
+import { ArrowIcon } from "./Icons";
+import type { RefCallback } from "react";
+import type { HubCardItem } from "../types";
 
-export default function HubCard({ card, descriptionRef, descriptionHeight }) {
+interface HubCardProps {
+  card: HubCardItem;
+  descriptionRef: RefCallback<HTMLParagraphElement>;
+  descriptionHeight: number;
+}
+
+export default function HubCard({ card, descriptionRef, descriptionHeight }: HubCardProps) {
   const Icon = card.icon;
 
   return (

@@ -79,9 +79,9 @@ bicknell-uk-hub
 │   └── postbuild.mjs
 ├── src
 │   ├── components
-│   │   └── Icons.jsx
-│   ├── App.jsx
-│   ├── main.jsx
+│   │   └── Icons.tsx
+│   ├── App.tsx
+│   ├── main.tsx
 │   └── styles.css
 ├── index.html
 ├── vite.config.js
@@ -93,7 +93,7 @@ bicknell-uk-hub
 
 ## Links to update
 
-The social links live in `src/App.jsx`.
+The social links live in `src/data/hubData.ts`.
 
 Update these values before publishing if you want to change YouTube, X, GitLab or any other profile URL:
 
