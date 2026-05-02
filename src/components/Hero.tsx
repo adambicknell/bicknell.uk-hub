@@ -2,13 +2,11 @@ export default function Hero() {
   return (
     <section className="hero">
       <div className="hero-inner">
-        <img
-          className="profile-image"
-          src="/adam.jpg"
-          alt="Adam Bicknell"
-          width="150"
-          height="150"
-        />
+        <div className="profile-image photo-cutout photo-cutout-tall">
+          <div className="photo-frame photo-frame-tall photo-frame-curved">
+            <img src="/adam.jpg" alt="Adam Bicknell" width="320" height="445" />
+          </div>
+        </div>
 
         <div className="hero-copy">
           <h1>Adam Bicknell</h1>
@@ -18,8 +16,8 @@ export default function Hero() {
           <span className="divider" aria-hidden="true" />
           <p className="intro">
             My work, ideas and projects across technology, business, books,
-            videos, personal development, motivation, spirituality,
-            psychology, philosophy and deeper esoteric thought.
+            videos, personal development, motivation, spirituality, psychology,
+            philosophy and deeper esoteric thought.
           </p>
         </div>
       </div>
