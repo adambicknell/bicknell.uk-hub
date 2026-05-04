@@ -8,8 +8,8 @@ export default function Header() {
           className="brand-mark"
           src="/adam1.jpg"
           alt="Adam Bicknell"
-          width="56"
-          height="56"
+          width="44"
+          height="44"
         />
         <span className="brand-name">bicknell.uk</span>
       </a>
