@@ -1,13 +1,11 @@
 import {
   SiApache,
-  SiNextdotjs,
   SiReact,
   SiTypescript,
   SiVite,
 } from "react-icons/si";
 
 const technologies = [
-  { name: "Next.js", icon: SiNextdotjs },
   { name: "React", icon: SiReact },
   { name: "TypeScript", icon: SiTypescript },
   { name: "Vite", icon: SiVite },
