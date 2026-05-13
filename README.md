@@ -26,6 +26,8 @@ Plain CSS
 Inline SVG icons  
 Post-build HTML minification  
 Post-build JavaScript obfuscation
+Google-valid sitemap generation
+Search-engine friendly `robots.txt` generation
 
 ## Getting started
 
@@ -61,13 +63,24 @@ The production build does the following:
 2. Minifies JavaScript and CSS
 3. Removes console output and debugger statements
 4. Minifies the generated HTML
-5. Obfuscates built JavaScript assets
+5. Generates a Google-valid `sitemap.xml` from the HTML pages emitted into `dist`
+6. Generates a `robots.txt` that points crawlers to the sitemap
+7. Obfuscates built JavaScript assets
 
 The output is created in:
 
 ```bash
 dist
 ```
+
+The generated sitemap and crawler hint files are written to:
+
+```bash
+dist/sitemap.xml
+dist/robots.txt
+```
+
+They are regenerated on every production build and use the canonical site origin from `index.html`, so the sitemap will be available at `https://bicknell.uk/sitemap.xml` once the contents of `dist` are deployed.
 
 ## Project structure
 
