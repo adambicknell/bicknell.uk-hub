@@ -1,0 +1,18 @@
+# This .htaccess file is critical for the React single-page application to work correctly.
+# It ensures that deep links and client-side routes fall back to index.html instead of returning 404s.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  # Allow direct access to the main entry point.
+  RewriteRule ^index\.html$ - [L]
+  # Serve existing files and directories as-is.
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+  # Redirect everything else to index.html so the client-side router can handle it.
+  RewriteRule . /index.html [L]
+</IfModule>
+
+# As an additional safeguard, fall back to index.html when mod_rewrite is unavailable.
+FallbackResource /index.html
+ErrorDocument 404 /index.html
